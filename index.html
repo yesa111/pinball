@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112393389-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112393389-1');
+    </script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./app/assets/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./app/assets/javascripts/bundle.js" charset="utf-8"></script>
+    <title>Pinball Wizard</title>
+  </head>
+  <body>
+    <div class="title"><h2>Pinball ⚡ Wizard </h2></div> 
+    <div class="body">
+    <div class="icons">
+      <li><a href="https://github.com/fishshiz" i class="fa fa-github fa-3x" aria-hidden="true"></a></li>
+      <li><a href="https://www.linkedin.com/in/edan-lewis-752633133/" i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></a></li>
+      <li><a href="https://angel.co/edan-lewis?public_profile=1" i class="fa fa-angellist fa-3x" aria-hidden="true"></a></li>
+    </div>
+  <canvas id="pinball-canvas"></canvas>
+  <div class="scorers-table">
+    <div class="stats-div">
+      <div class="scores">
+        <span>Score</span>
+        <span>High Score</span>
+      </div>
+      <div class="score-nums">
+        <span id="score"></span>
+        <span id="high-score"></span>
+      </div>
+      <span>Balls</span>
+      <span id="ball-count"></span>
+    </div>
+    <div class="instructions">
+      Press the Arrow keys to control paddles.
+      Press the <i class="fa fa-arrow-up" aria-hidden="true"></i> key to launch the ball.
+
+    </div>
+  </div>
+  </div>
+  </body>
+</html>
