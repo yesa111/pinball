@@ -4,7 +4,7 @@ import Matter from 'Matter-js';
   const Constraint = Matter.Constraint;
   const bufferGroup = Matter.Body.nextGroup(true);
 
-  const COLORS = { WALLS: "#C4CFD4", INNERWALLS: "#608CBB", BUMPERS: "#A9D2F0", ORBS: "#5C43B5", PADDLE: "#f5a02e" };
+  const COLORS = { WALLS: "#FF0000", INNERWALLS: "#0000FF", BUMPERS: "#FFFF00", ORBS: "#00FF00", PADDLE: "#00FF00" };
 
   export const circles = function circles() {
     let circle1 = Bodies.circle(235, 120, 30, { label: 'topCircle', isStatic: true, render: { fillStyle: COLORS.ORBS } });
